@@ -21,7 +21,6 @@ The current CSV format is this:
 ```
 $ cat sample.csv
 Date,Counter Party,Reference,Type,Amount (GBP),Balance (GBP)
-,Opening Balance,,,,0.00
 31/03/2018,Starling Bank,March Interest Earned,INTEREST PAYMENT,0.02,0.02
 03/04/2018,Company A,INVOICE 12345,CHAPS,1250.50,1250.52
 03/04/2018,Company B,BILL 54312,CHAPS,-500.20,750.30

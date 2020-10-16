@@ -9,7 +9,6 @@ def convertCSV(filename):
         rdr = csv.reader(source)
         wtr = csv.writer(result, delimiter=',', )
         next(rdr)  # Skip CSV headers
-        next(rdr)  # Skip "Opening balance."
         for row in rdr:
             wtr.writerow([row[0], row[4], row[2]])
 
