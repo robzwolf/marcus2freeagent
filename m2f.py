@@ -10,7 +10,12 @@ def convertCSV(filename):
         wtr = csv.writer(result, delimiter=',', )
         next(rdr)  # Skip CSV headers
         for row in rdr:
-            wtr.writerow([row[0], row[4], row[2]])
+            date = row[0]
+            date = f"{date[6:8]}/{date[4:6]}/{date[0:4]}"
+            amount = row[2]
+            description = row[1]
+            wtr.writerow([date, amount, description])
+
 
 def main(argv):
     convertCSV(argv[0])
