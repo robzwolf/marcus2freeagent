@@ -1,3 +1,6 @@
+# ARCHIVED
+This has been replaced by the [FreeAgent CSV Formatter](https://fcf.v.robbie.dev/).
+
 # marcus2freeagent
 Convert Marcus CSV format to be imported by FreeAgent 
 
